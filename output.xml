@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.12 on win32)" generated="20220407 13:44:51.414" rpa="false" schemaversion="3">
+<suite id="s1" name="TC02 SignUpTest" source="F:\ajkerdeal_robot\TestCases\TC02_SignUpTest.robot">
+<test id="s1-t1" name="Signup Test" line="9">
+<kw name="Open my browser" library="Keyword">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 13:44:51.883" level="INFO">Opening browser 'chrome' to base url 'https://ajkerdeal.com/'.</msg>
+<status status="PASS" starttime="20220407 13:44:51.883" endtime="20220407 13:45:00.676"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:05.692" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:00.676" endtime="20220407 13:45:05.692"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 13:45:05.692" endtime="20220407 13:45:05.947"/>
+</kw>
+<status status="PASS" starttime="20220407 13:44:51.883" endtime="20220407 13:45:05.947"/>
+</kw>
+<kw name="Signup" library="SignUpPage">
+<arg>${name}</arg>
+<arg>${mobile}</arg>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<arg>${againpassword}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:07.955" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:05.955" endtime="20220407 13:45:07.955"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${signup_locator}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:07.955" level="INFO">Clicking link 'xpath://a[@id='hover-Id']'.</msg>
+<status status="PASS" starttime="20220407 13:45:07.955" endtime="20220407 13:45:08.129"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:10.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:08.129" endtime="20220407 13:45:10.142"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Registration_link}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:10.142" level="INFO">Clicking link 'xpath://a[contains(text(),'রেজিস্টার')]'.</msg>
+<status status="PASS" starttime="20220407 13:45:10.142" endtime="20220407 13:45:20.226"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:23.229" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:20.226" endtime="20220407 13:45:23.229"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${NAME_BOX}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:23.229" level="INFO">Typing text 'tareque' into text field 'xpath://*[@id='NameTextBox']'.</msg>
+<status status="PASS" starttime="20220407 13:45:23.229" endtime="20220407 13:45:23.406"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:25.406" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:23.406" endtime="20220407 13:45:25.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${MOBILE_BOX}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:25.406" level="INFO">Typing text '01793559940' into text field 'xpath://input[@id='MobileTextBox']'.</msg>
+<status status="PASS" starttime="20220407 13:45:25.406" endtime="20220407 13:45:25.618"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:27.628" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:25.618" endtime="20220407 13:45:27.628"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_BOX}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:27.628" level="INFO">Typing text 'tareque.hamzah@gmail.com' into text field 'xpath://input[@id='EmailTextBoxs']'.</msg>
+<status status="PASS" starttime="20220407 13:45:27.628" endtime="20220407 13:45:27.850"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:29.858" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:27.850" endtime="20220407 13:45:29.858"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_BOX}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:29.858" level="INFO">Typing text 'TestCase01' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20220407 13:45:29.858" endtime="20220407 13:45:30.059"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:32.072" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:30.059" endtime="20220407 13:45:32.072"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${AGAIN_PASSWORD_BOX}</arg>
+<arg>${againpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:32.072" level="INFO">Typing text 'TestCase01' into text field 'xpath://input[@id='againPassowrd']'.</msg>
+<status status="PASS" starttime="20220407 13:45:32.072" endtime="20220407 13:45:32.252"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:34.260" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:32.252" endtime="20220407 13:45:34.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${male_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:34.260" level="INFO">Clicking element 'xpath://*[@id='MaleRadioButton']'.</msg>
+<status status="PASS" starttime="20220407 13:45:34.260" endtime="20220407 13:45:34.384"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:36.393" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:34.384" endtime="20220407 13:45:36.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${REGISTER_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 13:45:36.393" level="INFO">Clicking element 'xpath://input[@id='SignupButton']'.</msg>
+<status status="PASS" starttime="20220407 13:45:36.393" endtime="20220407 13:45:39.291"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 13:45:42.303" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 13:45:39.291" endtime="20220407 13:45:42.303"/>
+</kw>
+<status status="PASS" starttime="20220407 13:45:05.947" endtime="20220407 13:45:42.303"/>
+</kw>
+<kw name="Close my browser" library="SignUpPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220407 13:45:42.303" endtime="20220407 13:45:44.765"/>
+</kw>
+<status status="PASS" starttime="20220407 13:45:42.303" endtime="20220407 13:45:44.765"/>
+</kw>
+<status status="PASS" starttime="20220407 13:44:51.883" endtime="20220407 13:45:44.765"/>
+</test>
+<status status="PASS" starttime="20220407 13:44:51.430" endtime="20220407 13:45:44.781"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC02 SignUpTest">TC02 SignUpTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
